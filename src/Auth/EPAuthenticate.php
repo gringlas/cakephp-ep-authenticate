@@ -29,6 +29,7 @@ class EPAuthenticate extends BaseAuthenticate
             'debugOnly' => true,
             'header' => 'EP-Authorization',
             'userId' => 1,
+            'password' => 'EPme',
             'unauthenticatedException' => UnauthorizedException::class,
         ];
 
