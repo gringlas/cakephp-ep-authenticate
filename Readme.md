@@ -15,17 +15,25 @@ Just add `gringlas/EPAuthenticate.EP` to your AuthComponent authenticate, like
 $this->loacComponent('Auth', [
     'authenticate' => [
         'header' => 'EP-Authorization',
-            'userId' => 1,
-            'debugOnly' => false,
-            'password' => 'EPme',
-        ],
-        ...
-        );
+        'userId' => 1,
+        'debugOnly' => false,
+        'password' => 'EPme',
+    ],
+    ...
+);
 ````
 
-## Configratiion
+Send add set `header` and `password` to your next request and get authenticated as User with id `userid`.
+
+## Configuration
 
 - `userId`: Id of User data, which should be authed, defaults to 1
 - `debugOnly`: only use AuthenticateAdapter when `env('debug', true)`, defaults to true
 - `header`: Name of header, defaults to `EP-Authorization`
 - `password`: Value of header, defaults to `EPme`
+
+
+## ToDo
+
+* Add custom UserModel, so far only users from DB table are supported
+* Add custom finder method, so far only a `$this->User->get($this->getConfig['user'])` is used to get User data.
