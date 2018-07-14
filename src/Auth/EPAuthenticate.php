@@ -6,7 +6,7 @@
  * Time: 10:19
  */
 
-namespace gringlas\EPAuth\Auth;
+namespace gringlas\EPAuthenticate\Auth;
 
 
 use Cake\Auth\BaseAuthenticate;

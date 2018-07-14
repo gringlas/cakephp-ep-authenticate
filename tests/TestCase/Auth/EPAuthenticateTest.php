@@ -13,7 +13,7 @@ use Cake\Controller\ComponentRegistry;
 use Cake\Http\Response;
 use Cake\Http\ServerRequest;
 use Cake\TestSuite\TestCase;
-use gringlas\EPAuth\Auth\EPAuthenticate;
+use gringlas\EPAuthenticate\Auth\EPAuthenticate;
 
 class EPAuthenticateTest extends TestCase
 {
