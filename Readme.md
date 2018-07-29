@@ -14,11 +14,12 @@ Just add `gringlas/EPAuthenticate.EP` to your AuthComponent authenticate, like
 ````
 $this->loacComponent('Auth', [
     'authenticate' => [
-        'header' => 'EP-Authorization',
-        'userId' => 1,
-        'debugOnly' => false,
-        'password' => 'EPme',
-    ],
+        'gringlas/EPAuthenticate.EP' => [
+            'header' => 'EP-Authorization',
+            'userId' => 1,
+            'debugOnly' => false,
+            'password' => 'EPme',
+        ],
     ...
 );
 ````
