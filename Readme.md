@@ -1,4 +1,4 @@
-# CakePHP EPAuthenticate Plugin 
+# CakePHP 3 EPAuthenticate Plugin 
 This little plugin provides an Authenticate adapter for stateless Authentication. It allows you to specify a special header, which contains a token to authorize in your application. This can be very helpful for testing, be it unittests or manual tests with API clients (like Postman) or directly in your client software.
 
 ## Installation

@@ -14,7 +14,7 @@ use Cake\Controller\ComponentRegistry;
 use Cake\Core\Configure;
 use Cake\Http\Response;
 use Cake\Http\ServerRequest;
-use Cake\Network\Exception\UnauthorizedException;
+use Cake\Http\Exception\UnauthorizedException;
 use Cake\ORM\Locator\LocatorAwareTrait;
 
 class EPAuthenticate extends BaseAuthenticate
@@ -34,7 +34,7 @@ class EPAuthenticate extends BaseAuthenticate
         ];
 
         if (!class_exists(UnauthorizedException::class)) {
-            $defaultConfig['unauthenticatedException'] = 'Cake\Network\Exception\UnauthorizedException';
+            $defaultConfig['unauthenticatedException'] = 'Cake\Http\Exception\UnauthorizedException';
         }
 
         $this->setConfig($defaultConfig);
